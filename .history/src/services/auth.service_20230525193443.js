@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = `https://cadon-back-end.herokuapp.com/api/user`;
+const API_URL = "https://cadon-back-end.herokuapp.com/api/user`;
 const EDIT_URL = `https://cadon-back-end.herokuapp.com/api/edit`;
 
 class AuthService {

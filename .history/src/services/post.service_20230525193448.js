@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = `https://cadon-back-end.herokuapp.com/api`;
+const API_URL = `https://cadon-back-end.herokuapp.com/api";
 
 class PostService {
   // Return Token;
