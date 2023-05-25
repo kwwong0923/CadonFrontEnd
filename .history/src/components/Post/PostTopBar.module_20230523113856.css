@@ -1,0 +1,8 @@
+.postBar {
+  display: flex;
+  margin: 1rem 1rem;
+}
+
+.postBar h1 {
+    flex: 1 1;
+}

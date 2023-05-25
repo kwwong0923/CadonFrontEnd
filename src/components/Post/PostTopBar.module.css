@@ -1,0 +1,15 @@
+.postBar {
+  display: flex;
+  margin: 1rem 1rem;
+}
+
+.postBar h1 {
+  flex: 1 1;
+}
+
+.postBar button {
+  border: none;
+  margin-left: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+}

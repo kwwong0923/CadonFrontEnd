@@ -1,0 +1,39 @@
+.popup {
+  margin: 5rem;
+}
+
+.popup h1 {
+  text-align: center;
+  margin: 2rem;
+  font: 1.2rem;
+}
+
+.popup p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.popup label {
+}
+.popup input {
+  padding: 0.5rem 0.5rem;
+  width: ;
+}
+
+.popup textarea {
+  padding: 1rem 0.5rem;
+}
+
+.selection {
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  margin-left: 1rem;
+  padding: 0.6rem;
+}

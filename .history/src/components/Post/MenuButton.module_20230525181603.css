@@ -1,0 +1,30 @@
+.menuButtons {
+  width: 100%;
+  display: flex;
+  box-shadow: 0.5px 0.5px 1px rgba(221, 218, 218, 0.794);
+}
+
+.menuButton {
+  flex: 1 1;
+  height: 2rem;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 0rem;
+  background-color: transparent;
+}
+
+.newPost {
+  flex: 0.4 1;
+  height: 2rem;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 0rem;
+}
+
+.menuButtons button:hover {
+  color: #34495e;
+  font-weight: bold;
+}
+

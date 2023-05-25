@@ -1,0 +1,25 @@
+.searching {
+  width: 100%;
+  margin: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.searching select {
+  height: 1.6rem;
+  width: 6rem;
+  margin-left: 2rem;
+}
+
+.searching input {
+  height: 1.6rem;
+  width: 20rem;
+  margin-left: 2rem;
+}
+
+.searching button {
+  border: none;
+  margin-left: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+}

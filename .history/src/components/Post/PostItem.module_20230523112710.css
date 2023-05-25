@@ -1,0 +1,17 @@
+.postItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 1px rgba(221, 218, 218, 0.794);
+  transition: all 0.3s ease;
+}
+
+.postItem:hover {
+  background-color: #d9d4d4a8;
+  transform: scale(0.99);
+}
+
+.postItem:active {
+  background-color: #c5c4c4;
+}

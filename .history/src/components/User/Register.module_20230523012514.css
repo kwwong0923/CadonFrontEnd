@@ -1,0 +1,32 @@
+.frame {
+  margin: 5rem;
+}
+
+.frame p {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: ;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  margin: 2rem;
+  font: 1.2rem;
+}
+
+.warningMessage {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button {
+    margin-left: 1rem;
+    padding: 0.6rem;
+}

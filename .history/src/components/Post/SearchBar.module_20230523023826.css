@@ -1,0 +1,12 @@
+.searching {
+  width: 100%;
+  margin: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searching select {
+  height: 1.6rem;
+  width: 6rem;
+  margin-left: 2rem;
+}

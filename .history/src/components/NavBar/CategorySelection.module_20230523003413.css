@@ -1,0 +1,7 @@
+.selection {
+  grid-template-areas: "select";
+  margin: 0rem 8rem;
+  width: 10rem;
+  height: 1.5rem;
+  font-size: 1.15rem;
+}

@@ -1,0 +1,5 @@
+.menuButtons {
+    width: 100%;
+  display: flex;
+  box-shadow: 0.5px 0.5px 1px rgba(221, 218, 218, 0.794);
+}

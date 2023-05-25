@@ -1,0 +1,67 @@
+.frame {
+  margin: 5rem;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem;
+  font: 1.2rem;
+}
+
+.userInfo {
+  display: flex;
+}
+
+.subject {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  display: flex;
+  flex: 2 2;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit p {
+  margin-left: 3.5rem;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 0.6rem;
+}
+
+.editWindow {
+  margin-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  
+  box-shadow: 0.5px 0.5px 1px rgba(221, 218, 218, 0.794);
+}
+
+.editContent {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.editContent input {
+  padding: 0.6rem;
+}
+

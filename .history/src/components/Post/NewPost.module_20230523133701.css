@@ -1,0 +1,48 @@
+.popup {
+  margin: 5rem;
+}
+
+.popup h1 {
+  text-align: center;
+  margin: 2rem;
+  font: 1.2rem;
+}
+
+.postRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.popup input {
+  padding: 0.5rem 0.5rem;
+  width: 20rem;
+}
+
+.popup textarea {
+  padding: 1rem 0.5rem;
+}
+
+.selection {
+    display: flex;
+    justify-content: flex-start;
+    ali
+    margin-bottom: 1rem;
+}
+
+.selection select {
+    margin-left: 2.6rem;
+    width: 10rem;
+    height: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  margin-left: 1rem;
+  padding: 0.6rem;
+}

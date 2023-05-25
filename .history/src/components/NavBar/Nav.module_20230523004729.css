@@ -1,0 +1,24 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.35rem;
+  margin: 0 2rem;
+  transition: all 0.25s;
+}
+
+.nav ul a:hover {
+  color: #34495e;
+  font-weight: bold;
+  border-bottom: 1px solid #34495e;
+}

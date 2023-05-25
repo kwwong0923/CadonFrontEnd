@@ -1,0 +1,21 @@
+.frame {
+    margin: 5rem;
+  }
+  
+  .frame p {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .frame input {
+    width: 20rem;
+    margin-left: 2rem;
+  }
+  
+  .title {
+    text-align: center;
+    margin: 2rem;
+    font: 1.2rem;
+  }
