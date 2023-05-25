@@ -1,6 +1,6 @@
 import axios from "axios";
 const API_URL = "https://cadon-back-end.herokuapp.com/api/user";
-const EDIT_URL = "https://cadon-back-end.herokuapp.com/api/edit";
+const EDIT_URL = "http://localhost:8080/api/edit";
 
 class AuthService {
   getCurrentUser() {
