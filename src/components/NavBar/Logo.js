@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 // CSS Module
-import styles from "./Logo.module.css"
+import styles from "./Logo.module.css";
 const Logo = () => {
-    return (
-        <img className={styles.logoImg} src="./icons/logo_tran.png" alt="LOGO"/>
-    )
-}
+  return (
+    <>
+      <img className={styles.logoImg} src="./icons/logo_tran.png" alt="LOGO" />
+    </>
+  );
+};
 
-export default Logo
+export default Logo;

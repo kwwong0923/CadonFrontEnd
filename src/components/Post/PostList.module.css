@@ -1,3 +1,7 @@
 .list {
     overflow-y: auto;
 }
+
+@media (max-width: 1635px) {
+
+}

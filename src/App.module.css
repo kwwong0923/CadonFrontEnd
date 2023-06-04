@@ -9,7 +9,8 @@ header {
 .topLeft {
   height: 100%;
   display: flex;
-  flex: 3 1;
+  flex-wrap: wrap;
+  flex: 3 1 0;
   align-items: center;
   justify-content: flex-start;
   margin-right: 1rem;
@@ -20,7 +21,7 @@ header {
 .topRight {
   height: 100%;
   display: flex;
-  flex: 5 1;
+  flex: 5 1 0;
   align-items: center;
   background-color: #f8f9f9;
   box-shadow: 0.5px 0.5px 1px rgba(221, 218, 218, 0.794);
@@ -53,15 +54,14 @@ main {
   overflow-y: auto;
 }
 
-@media screen and (max-width: 916px) {
+@media (max-width: 500px) {
   header {
-    display: flex;
-    flex-direction: column;
+    height: 5vh;
   }
-
-  main {
-    display: flex;
-    flex-direction: column
+  .topRight {
+    display: none;
   }
-
+  .centerRight {
+    display: none;
+  }
 }
