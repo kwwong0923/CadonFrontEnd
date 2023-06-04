@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useEffect, useState } from "react";
+import React, { Fragment, useContext, useEffect } from "react";
 // Context
 import { AppProvider, AppContext } from "./context/App.provider";
 // Components
@@ -16,19 +16,30 @@ import PostContent from "./components/Post/PostContent";
 // CSS Module
 import styles from "./App.module.css";
 
+
 function App() {
-  const [showNavOnLeft, setShowNavOnLeft] = useState(false);
+
   useEffect(() => {
+    const handleScroll = () => {
+      let position = window.scrollY;
+      setScrollPosition(position);
+    };
+
     const showMenu = () => {
-      if (window.innerWidth <= 500) {
-        setShowNavOnLeft(true);
-      } else {
-        setShowNavOnLeft(false);
+      if (window.innerWidth < 760) {
+        setShowNav(false);
+      }else
+      {
+        setShowNav(true);
+        setShowMenu(true)
+        setShowClose(false);
+
       }
     };
     window.addEventListener("resize", showMenu);
 
     return () => {
+      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", showMenu);
     };
   }, []);
@@ -37,9 +48,8 @@ function App() {
       <Fragment>
         <header>
           <section className={styles.topLeft}>
-              <Logo />
-              <CategorySelection />
-            {showNavOnLeft && <Nav />}
+            <Logo />
+            <CategorySelection />
           </section>
           <section className={styles.topRight}>
             <Nav />

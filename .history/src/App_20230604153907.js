@@ -37,8 +37,11 @@ function App() {
       <Fragment>
         <header>
           <section className={styles.topLeft}>
+            <div>
               <Logo />
               <CategorySelection />
+            </div>
+
             {showNavOnLeft && <Nav />}
           </section>
           <section className={styles.topRight}>

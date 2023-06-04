@@ -57,7 +57,7 @@ main {
 
 @media (max-width: 500px) {
   header {
-    height: 8vh;
+    height: auto;
   }
   .topRight {
     display: none;

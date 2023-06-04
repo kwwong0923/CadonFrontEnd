@@ -37,8 +37,9 @@ function App() {
       <Fragment>
         <header>
           <section className={styles.topLeft}>
-              <Logo />
-              <CategorySelection />
+            <i class="fa fa-drivers-license" aria-hidden="true"></i>
+            <Logo />
+            <CategorySelection />
             {showNavOnLeft && <Nav />}
           </section>
           <section className={styles.topRight}>

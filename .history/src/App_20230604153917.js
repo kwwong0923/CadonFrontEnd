@@ -39,6 +39,7 @@ function App() {
           <section className={styles.topLeft}>
               <Logo />
               <CategorySelection />
+            </div>
             {showNavOnLeft && <Nav />}
           </section>
           <section className={styles.topRight}>

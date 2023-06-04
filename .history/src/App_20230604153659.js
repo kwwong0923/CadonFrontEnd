@@ -1,6 +1,6 @@
-import React, { Fragment, useContext, useEffect, useState } from "react";
+import React, { Fragment, useContext, useEffect } from "react";
 // Context
-import { AppProvider, AppContext } from "./context/App.provider";
+import { AppProvider, AppContext, useState } from "./context/App.provider";
 // Components
 // Nav
 import Logo from "./components/NavBar/Logo";
@@ -23,7 +23,7 @@ function App() {
       if (window.innerWidth <= 500) {
         setShowNavOnLeft(true);
       } else {
-        setShowNavOnLeft(false);
+        setShowNavOnLeft(!showNavOnLeft);
       }
     };
     window.addEventListener("resize", showMenu);
@@ -37,9 +37,8 @@ function App() {
       <Fragment>
         <header>
           <section className={styles.topLeft}>
-              <Logo />
-              <CategorySelection />
-            {showNavOnLeft && <Nav />}
+            <Logo />
+            <CategorySelection />
           </section>
           <section className={styles.topRight}>
             <Nav />
