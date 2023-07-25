@@ -9,6 +9,7 @@ Cadon is an online forum which is built by mern-stack. It provides a platform fo
 npm start
 '''
 the app will be run on [http://localhost:3000](http://localhost:3000) by default
+* it should works with the [Back-End](https://github.com/kwwong0923/CadonBackEnd)
 
 ## Contact Me
 Feel free to contact me, if you are interest to chat with me
