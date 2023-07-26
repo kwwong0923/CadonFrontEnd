@@ -1,6 +1,6 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api/user";
-const EDIT_URL = "http://localhost:8080/api/edit";
+const API_URL = "https://cadon-backend-server.onrender.com/api/user";
+const EDIT_URL = "https://cadon-backend-server.onrender.com/api/edit";
 
 class AuthService {
   getCurrentUser() {
@@ -29,7 +29,8 @@ class AuthService {
   }
 
   editUsername(_id, username) {
-    return axios.post(
+    let token = this.getToken();
+    return axios.patch(
       `${EDIT_URL}/username/${_id}`,
       { username },
       {
@@ -38,6 +39,16 @@ class AuthService {
         },
       }
     );
+  }
+
+  editPassword(_id, password)
+  {
+    let token = this.getToken();
+    return axios.patch(`${EDIT_URL}/password/${_id}`, { password }, {
+        headers: {
+            Authorization: token,
+        }
+    })
   }
 }
 

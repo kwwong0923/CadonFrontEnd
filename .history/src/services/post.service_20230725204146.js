@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api";
+const API_URL = "https://cadon-backend-server.onrender.com/api";
 
 class PostService {
   // Return Token;
@@ -37,7 +37,12 @@ class PostService {
 
   // Get posts by _id
   getPostsByUserId(_id) {
-    return axios.get(`${API_URL}/read/`)
+    let token = this.getToken();
+    return axios.get(`${API_URL}/post/user/${_id}`, {
+      headers: {
+        Authorization: token,
+      }
+    });
   }
 
   // Get posts by keyword
